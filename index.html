@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Popular Mariano Moreno - Bernal</title>
+  
+  <!-- tipografias de google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- estilosss -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="sitio-layout">
+
+  <!--Encabezado -->
+  <header class="encabezado-principal">
+    <div class="contenedor-header">
+      <a href="index.html" class="marca-logo">
+        <img src="img/lamoreno.png" alt="Logotipo" class="marca-logo__imagen">
+        <span class="marca-logo__nombre">LA MORENO</span>
+      </a>
+      <nav class="navegacion-principal">
+        <a href="#que-hacemos" class="enlace-nav">Qué hacemos</a>
+        <a href="#como-participar" class="enlace-nav">Cómo participar</a>
+        <a href="#contacto" class="enlace-nav">Contacto</a>
+        <a href="documentacion.html" class="enlace-nav enlace-nav--documentacion">Documentación</a>
+        <a href="#como-participar" class="btn-destacado">Asociate acá</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenido-principal">
+    
+    <!-- presentacion - hero -->
+    <section class="presentacion-hero">
+      <div class="presentacion-hero__texto">
+        <h1 class="presentacion-hero__titulo">Tu lugar para leer, aprender y encontrarte en Bernal</h1>
+        <p class="presentacion-hero__bajada">Somos la Asociación Cultural Mariano Moreno una organización social sin fines de lucro. Desarrolla actividades artísticas y culturales en el sur del gran Buenos Aires desde agosto de 1932, cuando un grupo de vecinos y vecinas de Bernal y otras localidades cercanas fundaron una biblioteca popular.</p>
+        <div class="presentacion-hero__acciones">
+          <a href="#como-participar" class="btn-destacado">Hacete socio</a>
+          <a href="#que-hacemos" class="btn-accion">Explorá talleres</a>
+        </div>
+      </div>
+      <div class="presentacion-hero__imagen-contenedor">
+        <img src="img/biblioteca.jpg" alt="Interior de la Biblioteca Popular Mariano Moreno con estanterías de libros y mesas de estudio" class="imagen-actividad">
+      </div>
+    </section>
+
+    <!-- La problematica y Bien Comun (Para responder la devolucion del profe) -->
+    <section class="seccion-problematica">
+      <div class="seccion-problematica__tarjeta">
+        <div class="seccion-problematica__texto">
+          <span class="etiqueta-categoria">Problemática y bien común</span>
+          <h2 class="seccion-problematica__titulo">Nuestra Misión Colectiva en el Barrio</h2>
+          <p class="seccion-problematica__parrafo">Frente a la era digital y la falta de espacios de encuentro, la "Moreno" ofrece contención y educación libre. Queremos que cada pibe, joven y adulto mayor de Bernal tenga un lugar para estudiar, llevarse libros y hacer talleres, sosteniendo la biblioteca de forma autogestionada entre todos los vecinos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- grillass -->
+    <section id="que-hacemos" class="seccion-grilla">
+      <div class="seccion-grilla__encabezado">
+        <h2 class="seccion-grilla__titulo">¿Qué hacemos en la Moreno?</h2>
+        <p class="seccion-grilla__subtitulo">Servicios y actividades comunitarias pensadas para el barrio de Bernal.</p>
+      </div>
+      
+      <!-- Cont trjetas Query -->
+      <div class="grilla-servicios">
+        
+        <!-- Tarj 1 -->
+        <div class="contenedor-tarjeta">
+          <article class="tarjeta-servicio">
+            <img src="img/libros.jpg" alt="Sala de lectura de la biblioteca" class="imagen-actividad">
+            <div class="tarjeta-servicio__cuerpo">
+              <span class="etiqueta-categoria">Socio Lector</span>
+              <h3 class="tarjeta-servicio__titulo">Préstamo de Libros</h3>
+              <p class="tarjeta-servicio__descripcion">Llevá novelas, textos escolares y literatura a tu casa. Contamos con una colección de más de 30.000 títulos para todas las edades.</p>
+              <a href="#contacto" class="btn-accion">Consultar catálogo</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Tarjeta2 -->
+        <div class="contenedor-tarjeta">
+          <article class="tarjeta-servicio">
+            <img src="img/escolar.png" alt="Niños en apoyo escolar" class="imagen-actividad">
+            <div class="tarjeta-servicio__cuerpo">
+              <span class="etiqueta-categoria">Gratuito</span>
+              <h3 class="tarjeta-servicio__titulo">Apoyo Escolar</h3>
+              <p class="tarjeta-servicio__descripcion">Acompañamiento pedagógico gratuito para primaria y secundaria, brindado por voluntarios para que ningún pibe del barrio se quede atrás.</p>
+              <a href="#contacto" class="btn-accion">Inscribirse</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Tarjta 3 -->
+        <div class="contenedor-tarjeta">
+          <article class="tarjeta-servicio">
+            <img src="img/cursos.jpg" alt="Taller cultural" class="imagen-actividad">
+            <div class="tarjeta-servicio__cuerpo">
+              <span class="etiqueta-categoria">Talleres</span>
+              <h3 class="tarjeta-servicio__titulo">Cursos y Cultura</h3>
+              <p class="tarjeta-servicio__descripcion">Talleres artísticos, de oficios y culturales accesibles para todas las edades. Teatro, ajedrez, literatura y más.</p>
+              <a href="#contacto" class="btn-accion">Ver cronograma</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- como participar -->
+    <section id="como-participar" class="pasos-involucrarse">
+      <div class="seccion-grilla__encabezado">
+        <h2 class="seccion-grilla__titulo">Involucrate en tu Biblioteca</h2>
+        <p class="seccion-grilla__subtitulo">Sostenemos este espacio con la cuota de nuestros asociados y el tiempo de los voluntarios.</p>
+      </div>
+
+      <div class="grilla-pasos">
+        <article class="item-paso">
+          <span class="item-paso__numero">1</span>
+          <h3 class="item-paso__titulo">Asociate</h3>
+          <p class="item-paso__descripcion">Por una pequeña cuota mensual de apoyo, podés llevarte libros a casa y posibilitar que la biblio siga abierta.</p>
+          <a href="#contacto" class="btn-accion">Ver requisitos</a>
+        </article>
+
+        <article class="item-paso">
+          <span class="item-paso__numero">2</span>
+          <h3 class="item-paso__titulo">Doná Libros</h3>
+          <p class="item-paso__descripcion">Recibimos libros en buen estado para nutrir nuestra biblioteca y las actividades de apoyo escolar.</p>
+          <a href="#contacto" class="btn-accion">Qué libros buscamos</a>
+        </article>
+
+        <article class="item-paso">
+          <span class="item-paso__numero">3</span>
+          <h3 class="item-paso__titulo">Sé Voluntario</h3>
+          <p class="item-paso__descripcion">Ofrecé tu tiempo para el apoyo escolar, catalogación de inventario o para la organización de eventos culturales.</p>
+          <a href="#contacto" class="btn-accion">Sumate</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- contacto y ubic -->
+    <section id="contacto" class="bloque-contacto">
+      <div class="bloque-contacto__informacion">
+        <h2 class="seccion-grilla__titulo">Contacto y Horarios</h2>
+        <p class="bloque-contacto__texto">Acercate de lunes a viernes para buscar libros, estudiar o informarte sobre nuestras actividades.</p>
+        
+        <div class="grupo-direccion">
+          <p class="grupo-direccion__item">📍 <strong>Ubicación:</strong> Belgrano 450, Bernal (Quilmes), Buenos Aires</p>
+          <p class="grupo-direccion__item">🕒 <strong>Horarios:</strong> Lunes a viernes de 10:00 a 13:00 hs y de 16:00 a 19:30 hs</p>
+          <p class="grupo-direccion__item">📞 <strong>Teléfono:</strong> 4252-0000</p>
+          <p class="grupo-direccion__item">✉️ <strong>Email:</strong> bpmorenobernal@gmail.com</p>
+        </div>
+
+        <div class="bloque-contacto__mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3278.4116499696225!2d-58.2831861244081!3d-34.707338572918884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32ebd970669d5%3A0x633efb251a37c956!2sBelgrano%20450%2C%20B1876%20Bernal%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1700000000000" width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="bloque-contacto__formulario-contenedor">
+        <h3 class="tarjeta-servicio__titulo">Dejanos tu consulta</h3>
+        <form class="formulario-consulta">
+          <div class="campo-contacto">
+            <label for="nombre" class="campo-contacto__etiqueta">Tu nombre</label>
+            <input type="text" id="nombre" name="nombre" class="texto-entrada" placeholder="Escribí tu nombre" required>
+          </div>
+          <div class="campo-contacto">
+            <label for="email" class="campo-contacto__etiqueta">Correo electrónico</label>
+            <input type="email" id="email" name="email" class="texto-entrada" placeholder="nombre@correo.com" required>
+          </div>
+          <div class="campo-contacto">
+            <label for="mensaje" class="campo-contacto__etiqueta">¿En qué te gustaría colaborar o consultar?</label>
+            <textarea id="mensaje" name="mensaje" class="texto-entrada texto-entrada--textarea" placeholder="¿Querés asociarte? ¿Donar libros? Escribinos..." required></textarea>
+          </div>
+          <button type="submit" class="btn-destacado">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Organismo: Pie de página -->
+  <footer class="pie-pagina">
+    <div class="pie-pagina__contenedor">
+      <div class="pie-pagina__info">
+        <p class="pie-pagina__nombre">Biblioteca Popular Mariano Moreno</p>
+        <p class="pie-pagina__detalles">Asociación Civil sin fines de lucro. Bernal, Quilmes.</p>
+      </div>
+      <div class="pie-pagina__enlaces">
+        <a href="documentacion.html" class="pie-pagina__enlace">Documentación del Sistema</a>
+        <span class="pie-pagina__separador">•</span>
+        <span class="pie-pagina__copyright">&copy; 2026 BP Moreno Bernal. Diseñado por Agustín.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

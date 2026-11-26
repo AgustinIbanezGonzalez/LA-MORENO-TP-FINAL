@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentacion de la Moreno - Bernal</title>
+  
+  <!-- tipografias de google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- enlace al css de estilos -->
+  <link rel="stylesheet" href="estilos.css">
+  
+  <!-- css extra para mostrar las cosas de diseño -->
+  <style>
+    .seccion-documentacion {
+      padding-top: var(--espacio-lg);
+      padding-bottom: var(--espacio-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--espacio-lg);
+      max-width: 900px;
+      margin: 0 auto;
+      padding-left: var(--espacio-md);
+      padding-right: var(--espacio-md);
+    }
+    .titulo-doc-general {
+      font-family: var(--tipo-fuente-titulos);
+      color: var(--color-marca-primario);
+      font-size: var(--tamaño-pantalla-titulo);
+      border-bottom: 3px solid var(--color-marca-primario);
+      padding-bottom: var(--espacio-sm);
+    }
+    .subtitulo-doc {
+      font-family: var(--tipo-fuente-titulos);
+      color: var(--color-marca-primario);
+      font-size: var(--tamaño-grande-seccion);
+      margin-top: var(--espacio-md);
+      border-bottom: 1px solid var(--color-borde-suave);
+      padding-bottom: var(--espacio-xs);
+    }
+    .doc-texto {
+      color: var(--color-texto-secundario);
+      margin-bottom: var(--espacio-md);
+    }
+    .doc-lista {
+      margin-left: var(--espacio-md);
+      margin-bottom: var(--espacio-md);
+      color: var(--color-texto-secundario);
+    }
+    .doc-lista li {
+      margin-bottom: var(--espacio-xs);
+    }
+    .grid-colores {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: var(--espacio-md);
+      margin-top: var(--espacio-md);
+    }
+    .muestra-color {
+      border: 1px solid var(--color-borde-suave);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--color-superficie);
+    }
+    .color-bloque {
+      height: 100px;
+    }
+    .color-info {
+      padding: var(--espacio-sm);
+      font-size: 0.9rem;
+    }
+    .color-nombre {
+      font-weight: 600;
+      color: var(--color-texto-principal);
+    }
+    .color-valor {
+      font-family: monospace;
+      color: var(--color-texto-secundario);
+    }
+    .escala-visual {
+      display: flex;
+      flex-direction: column;
+      gap: var(--espacio-sm);
+      background: var(--color-superficie);
+      padding: var(--espacio-md);
+      border-radius: 8px;
+      border: 1px solid var(--color-borde-suave);
+    }
+    .escala-item {
+      display: flex;
+      align-items: center;
+      gap: var(--espacio-md);
+    }
+    .escala-etiqueta {
+      width: 150px;
+      font-family: monospace;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+    .escala-barra {
+      background: var(--color-marca-primario);
+      height: 20px;
+      border-radius: 4px;
+    }
+    pre {
+      background: #1e1e1e;
+      color: #d4d4d4;
+      padding: var(--espacio-md);
+      border-radius: 6px;
+      overflow-x: auto;
+      font-size: 0.9rem;
+      margin-bottom: var(--espacio-md);
+    }
+  </style>
+</head>
+<body class="sitio-layout">
+
+  <!--Encabezado -->
+  <header class="encabezado-principal">
+    <div class="contenedor-header">
+      <a href="index.html" class="marca-logo">
+        <img src="img/lamoreno.png" alt="Logotipo de la Biblioteca LA MORENO" class="marca-logo__imagen">
+        <span class="marca-logo__nombre">LA MORENO</span>
+      </a>
+      <nav class="navegacion-principal">
+        <a href="index.html#que-hacemos" class="enlace-nav">Qué hacemos</a>
+        <a href="index.html#como-participar" class="enlace-nav">Cómo participar</a>
+        <a href="index.html#contacto" class="enlace-nav">Contacto</a>
+        <a href="documentacion.html" class="enlace-nav enlace-nav--documentacion">Documentación</a>
+        <a href="index.html#como-participar" class="btn-destacado">Asociate acá</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenido-principal">
+    <section class="seccion-documentacion">
+      <h1 class="titulo-doc-general">Documentación del Sistema de Diseño (TP FINAL)</h1>
+      
+      <!-- Seccion a) Sobre el Caso -->
+      <section>
+        <h2 class="subtitulo-doc">a) Sobre el Caso - Biblioteca popular Mariano Moreno</h2>
+        <p class="doc-texto">Elegi la <strong>Asociación Cultural Mariano Moreno</strong> de Bernal (LA MORENO), fundada en agosto de 1932. Me parecio un buen caso porque es un lugar muy conocido en el barrio (esta en Belgrano 450) pero digitalmente estan no tan bien asique un sitio les viene re bien para que la gente los conozca y se asocie.</p>
+        <p class="doc-texto"><strong>El Público:</strong> Aca asisten muchos pibes de Bernal y de Quilmes para el apoyo escolar y los talleres, pero tambien hay mucha gente grande (los adultos mayores) que van a buscar novelas y usar la sala de lectura. Por eso el sitio tiene que ser de facil de entendimiento, con letras grandes y colores tranquilos que no les cansen la vista.</p>
+        <p class="doc-texto"><strong>Objetivos:</strong> El sitio sirve para informar los horarios, ver que talleres y actividades hay, explicar bien como hacerse socios y que la gente del barrio pueda colaborar, ya sea donando libros o sumandose como voluntarios para las clases de apoyo.</p>
+      </section>
+
+      <!-- Seccion b) Análisis de Referencia -->
+      <section>
+        <h2 class="subtitulo-doc">b) deconstruccion del sitio </h2>
+        <p class="doc-texto">Para armar este sitio tome como base lo que estuvimos viendo con las deconstrucciones visuales:</p>
+        <ul class="doc-lista">
+          <li><strong>El sistema de Tarjetas (Cards):</strong> Copie la idea de encapsular informacion, como el titulo, descripcion y un boton en una sola tarjeta ("organismo") para que todo se mueva en bloque y no quede desparramado.</li>
+          <li><strong>El tema de las Categorias:</strong> Las etiquetas de color (Socio Lector, gratuito, talleres) vienen de los colores de de YouTube, para que de un vistazo la gente sepa rapido de que se trata cada actividad.</li>
+          <li><strong>Espaciados mas comodos:</strong> A diferencia de la interfaz mas apretada de youtube aca use espaciados mucho mas grandes pensando en la gente mayor para que no se les mezcle la informacion al leer.</li>
+        </ul>
+      </section>
+
+      <!-- Seccion c) Variables del Sistema -->
+      <section>
+        <h2 class="subtitulo-doc">c) Variables del Sistema (:root)</h2>
+        <p class="doc-texto">Deje todo configurado con Custom Properties en :root para poder cambiar cualquier cosa de diseño rapido sin tener que editar todos los estilosS:</p>
+        
+        <h3>Colores elegidos</h3>
+        <div class="grid-colores">
+          <div class="muestra-color">
+            <div class="color-bloque" style="background-color: #fafaf8;"></div>
+            <div class="color-info">
+              <span class="color-nombre">Fondo de pagina</span>
+              <span class="color-valor">--color-fondo: #fafaf8</span>
+            </div>
+          </div>
+          <div class="muestra-color">
+            <div class="color-bloque" style="background-color: #ffffff;"></div>
+            <div class="color-info">
+              <span class="color-nombre">Fondo de tarjetas</span>
+              <span class="color-valor">--color-superficie: #ffffff</span>
+            </div>
+          </div>
+          <div class="muestra-color">
+            <div class="color-bloque" style="background-color: #1a1a18;"></div>
+            <div class="color-info">
+              <span class="color-nombre">Texto oscuro</span>
+              <span class="color-valor">--color-texto-principal: #1a1a18</span>
+            </div>
+          </div>
+          <div class="muestra-color">
+            <div class="color-bloque" style="background-color: #123e31;"></div>
+            <div class="color-info">
+              <span class="color-nombre">Verde (Moreno)</span>
+              <span class="color-valor">--color-marca-primario: #123e31</span>
+            </div>
+          </div>
+          <div class="muestra-color">
+            <div class="color-bloque" style="background-color: #e05a36;"></div>
+            <div class="color-info">
+              <span class="color-nombre">Naranja tierra</span>
+              <span class="color-valor">--color-marca-secundario: #e05a36</span>
+            </div>
+          </div>
+        </div>
+
+        <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem;">Tipografias</h3>
+        <div class="escala-visual">
+          <div class="escala-item">
+            <span class="escala-etiqueta">--tamaño-pantalla-titulo</span>
+            <span style="font-size: 2.25rem; font-family: var(--tipo-fuente-titulos); font-weight:700;">Título Hero ~ 2.25rem</span>
+          </div>
+          <div class="escala-item">
+            <span class="escala-etiqueta">--tamaño-grande-seccion</span>
+            <span style="font-size: 1.5rem; font-family: var(--tipo-fuente-titulos); font-weight:700;">Título Sección ~ 1.5rem</span>
+          </div>
+          <div class="escala-item">
+            <span class="escala-etiqueta">--tamaño-lectura-base</span>
+            <span style="font-size: 1.125rem;">Lectura de textos ~ 1.125rem</span>
+          </div>
+          <div class="escala-item">
+            <span class="escala-etiqueta">--tamaño-pequeño-metadato</span>
+            <span style="font-size: 0.875rem;">Etiquetas y data chica ~ 0.875rem</span>
+          </div>
+        </div>
+
+        <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem;">Espaciados de la grilla</h3>
+        <div class="escala-visual">
+          <div class="escala-item">
+            <span class="escala-etiqueta">--espacio-xs (0.5rem)</span>
+            <div class="escala-barra" style="width: 8px;"></div>
+          </div>
+          <div class="escala-item">
+            <span class="escala-etiqueta">--espacio-sm (1rem)</span>
+            <div class="escala-barra" style="width: 16px;"></div>
+          </div>
+          <div class="escala-item">
+            <span class="escala-etiqueta">--espacio-md (1.5rem)</span>
+            <div class="escala-barra" style="width: 24px;"></div>
+          </div>
+          <div class="escala-item">
+            <span class="escala-etiqueta">--espacio-lg (3.5rem)</span>
+            <div class="escala-barra" style="width: 56px;"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seccion d) Inventario de Componentes -->
+      <section>
+        <h2 class="subtitulo-doc">d) Inventario de Componentes Atómicos</h2>
+        <p class="doc-texto">Arme todo pensando en los tres niveles dee Atomic Design. Nombres de clases en español para que sea mas facil:</p>
+        <ul class="doc-lista">
+          <li><strong>Átomos (Atoms):</strong> <code>.marca-logo</code>, <code>.enlace-nav</code>, <code>.btn-destacado</code>, <code>.btn-accion</code>, <code>.etiqueta-categoria</code>, <code>.texto-entrada</code>.</li>
+          <li><strong>Moléculas (Molecules):</strong> <code>.tarjeta-servicio</code>, <code>.item-paso</code>, <code>.campo-contacto</code>, <code>.grupo-direccion</code>, <code>.formulario-consulta</code>.</li>
+          <li><strong>Organismos (Organisms):</strong> <code>.encabezado-principal</code>, <code>.presentacion-hero</code>, <code>.seccion-problematica</code>, <code>.seccion-grilla</code>, <code>.pasos-involucrarse</code>, <code>.bloque-contacto</code>, <code>.pie-pagina</code>.</li>
+        </ul>
+      </section>
+
+      <!-- Seccion e) estructura decisiones -->
+      <section>
+        <h2 class="subtitulo-doc">e) Decisiones de Estructura </h2>
+        <p class="doc-texto"><strong>1. CSS Grid en serio:</strong> Para la estructura macro use Grid si o si, nada de flexbox para el layout grande (ese lo use para pavadas como alinear los botones o el menu). En desktop (1280px) lo configure en 12 columnas. El header, hero, problematica y footer ocupan todo el ancho de la grilla (de la columna 1 a la 13) y la parte de que hacemos se divide en 3 columnas iguales de 4 columnas cada una (span 4). En mobile es una sola columna vertical fluida.</p>
+        <p class="doc-texto"><strong>2. El Container Query en la tarjeta de servicio:</strong> Para cambiar el formato de las tarjetas segun el espacio y no la pantalla, cree un contenedor de tarjeta y le meti container query. Cuando la celda es chica (menos de 500px), la tarjeta es vertical (imagen arriba, texto abajo). Si pasa los 500px, se convierte en horizontal (imagen a la izquierda y el texto al lado) sin tocar el viewport. Me parece clave para que la tarjeta se adapte sola este donde este.</p>
+        <pre><code>.contenedor-tarjeta {
+  container-type: inline-size;
+  container-name: tarjeta;
+}
+
+@container tarjeta (min-width: 500px) {
+  .tarjeta-servicio {
+    flex-direction: row; /* Horizontal inteligente */
+  }
+}</code></pre>
+        <p class="doc-texto"><strong>3. Complicaciones y cosas mas dificiles:</strong> Lo que mas me costo fue hacer que calce todo perfecto en desktop (1280px) usando Grid sin romper la adaptabilidad y el comportamiento de las tarjetas. Al usar flexbox adentro de las tarjetas para empujar el boton al final, me pasaba que con textos de distintos largos se veia desparejo, pero lo pude solucionar usando flex-grow en el cuerpo de las tarjetas para que queden todas de la misma altura, pero con algunas guias y videos pude resolverslo de manera correcta.</p>
+      </section>
+    </section>
+  </main>
+
+  <!-- Organismopie de página -->
+  <footer class="pie-pagina">
+    <div class="pie-pagina__contenedor">
+      <div class="pie-pagina__info">
+        <p class="pie-pagina__nombre">Biblioteca Popular Mariano Moreno (LA MORENO)</p>
+        <p class="pie-pagina__detalles">Asociación Civil sin fines de lucro. Bernal, Quilmes.</p>
+      </div>
+      <div class="pie-pagina__enlaces">
+        <a href="index.html" class="pie-pagina__enlace">Volver al Sitio</a>
+        <span class="pie-pagina__separador">•</span>
+        <span class="pie-pagina__copyright">&copy; 2026 BP Moreno Bernal. Diseñado por Agustín.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
